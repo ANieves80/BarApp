@@ -16,21 +16,14 @@ textarea {
   resize: none; }
 
 @media screen and (max-width: 991px) {
-  .measureDiv1 {
-    text-align: left;
-    min-width: 200px; } }
-
-@media screen and (max-width: 900px) {
-  #drinkImg {
-    margin: 0; } }
+  #ingredientName {
+    min-width: 400px; } }
 
 @media screen and (max-width: 770px) {
   .measureDiv1 {
-    text-align: left; }
+    text-align: center; }
   #drinkNameDiv {
     text-align: center; }
   #nameOfDrink {
     font-size: 30px;
-    font-weight: bold; }
-  #wholeImgDiv {
-    margin-left: 0; } }
+    font-weight: bold; } }
