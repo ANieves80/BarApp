@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('#mixData').append('<div><b>Drink Type: </b><i>' +data.drinks[0].strAlcoholic+'</i></div>');
             $('#mixData').append('<div><b>Ingredients: </b></div>');
             $('#txtAreaDiv').empty();
-            $('#txtAreaDiv').append("<label for=\"commentsTxtArea\">Comments:</label>");
+            $('#txtAreaDiv').append("<label for=\"commentsTxtArea\"><b>Comments:</b></label>");
             $('#txtAreaDiv').append("<textarea class=\"form-control\" id=\"commentsTxtArea\" rows=\"3\"></textarea>");
             $('#txtAreaDiv').append('<div id="txtAreaBtnDiv" class="text-center"></div>')
             $('#txtAreaBtnDiv').empty();
@@ -42,10 +42,13 @@ $(document).ready(function () {
         $('#ingredientName').empty();
         $('#ingredientMeasurement').empty();
         for(let i = 0; i < 15; i++){
-            if(ingredientsArr[i] !== null && (ingredientsArr[i]))
-                 $('#ingredientName').append('<div class="measureDiv1"><i>' +ingredientsArr[i]+":"+'</i></div>');
-            if(strMeasureArr[i] !== null && (strMeasureArr[i]))
-                 $('#ingredientMeasurement').append('<div class="measureDiv2"><i>' +strMeasureArr[i]+'</i></div>');
+            if(ingredientsArr[i] !== null && (ingredientsArr[i])){
+             $('#ingredientName').append('<div id="ingreContDiv'+[i]+'" class="row"></div>');
+             $('#ingreContDiv'+[i]).append('<div class="col-6 measureDiv1"><i>' +ingredientsArr[i]+":"+'</i></div>');
+            }
+            if(strMeasureArr[i] !== null && (strMeasureArr[i])){
+                $('#ingreContDiv'+[i]).append('<div class="col-6 measureDiv2 text-left"><i>' +strMeasureArr[i]+'</i></div>');
+            }
         }
             
     }
