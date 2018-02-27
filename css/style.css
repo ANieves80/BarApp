@@ -1,0 +1,36 @@
+.imageDrink {
+  height: 400px;
+  width: 400px; }
+
+#mixData, #drinkNameDiv {
+  width: 400px; }
+
+#nameOfDrink {
+  font-size: 3vw;
+  font-weight: bold; }
+
+.measureDiv2 {
+  min-width: 180px; }
+
+textarea {
+  resize: none; }
+
+@media screen and (max-width: 991px) {
+  .measureDiv1 {
+    text-align: left;
+    min-width: 200px; } }
+
+@media screen and (max-width: 900px) {
+  #drinkImg {
+    margin: 0; } }
+
+@media screen and (max-width: 770px) {
+  .measureDiv1 {
+    text-align: left; }
+  #drinkNameDiv {
+    text-align: center; }
+  #nameOfDrink {
+    font-size: 30px;
+    font-weight: bold; }
+  #wholeImgDiv {
+    margin-left: 0; } }
