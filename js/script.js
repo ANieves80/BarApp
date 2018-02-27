@@ -15,9 +15,11 @@ $(document).ready(function () {
             $('#mixData').append('<div><b>Glass Type: </b><i>' +data.drinks[0].strGlass+'</i></div>');
             $('#mixData').append('<div><b>Drink Type: </b><i>' +data.drinks[0].strAlcoholic+'</i></div>');
             $('#mixData').append('<div><b>Ingredients: </b></div>');
+            $('#txtAreaDiv').empty();
             $('#txtAreaDiv').append("<label for=\"commentsTxtArea\">Comments:</label>");
             $('#txtAreaDiv').append("<textarea class=\"form-control\" id=\"commentsTxtArea\" rows=\"3\"></textarea>");
             $('#txtAreaDiv').append('<div id="txtAreaBtnDiv" class="text-center"></div>')
+            $('#txtAreaBtnDiv').empty();
             $('#txtAreaBtnDiv').append('<button class="btn btn-info txt-center m-2">Save</button>');
             $('#txtAreaBtnDiv').append('<button class="btn btn-danger txt-center m-2">Delete</button>');
             setIngredients(data);
