@@ -27,3 +27,8 @@ textarea {
   #nameOfDrink {
     font-size: 30px;
     font-weight: bold; } }
+
+@media screen and (max-width: 575px) {
+  .imageDrink {
+    height: 350px;
+    width: 350px; } }
